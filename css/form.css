@@ -1,0 +1,459 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "inter", sans-serif;
+    /* font-weight: 400; */
+    /* background: #0a061d; */
+    /* color: white; */
+  }
+  :root {
+    --primary-color: #eb6325;
+    --secondary-color: #fff;
+    --sucess-color: #0b2f78;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+  }
+#formulario {
+    width: 100%;
+    justify-content:center;
+
+    align-items: center;
+    text-align: center;
+    margin-bottom:300px;
+}
+  .titulo-formulario {
+    font-weight: bold;
+    color:#000;
+  }
+  #subtitulo-formulario{
+    /*background-color: aqua;*/
+    color:#000;
+    font-size:15px;
+    margin-top:15px;
+  }
+  .container-input-label {
+    flex-direction: column;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+    margin-top:50px;
+  }
+  .container-input {
+    display: flex;
+    flex-direction:row;
+    gap:30px;
+    align-items: center;
+    justify-content: center;
+  }
+  .input-pessoa {
+    border: 1px solid #000;
+    width:280px;
+    height:55px;
+    background-image:linear-gradient(30deg,#cccc, #fff);
+    margin-top:20px;
+    border-radius:5px;
+    font-size:18px;
+    padding-left:20px;
+  }
+  .input-select-opcao {
+    border: 1px solid #000;
+    width:283px;
+    height:60px;
+    background-image:linear-gradient(30deg,#cccc, #fff);
+    margin-top:20px;
+    border-radius:5px;
+    font-size:18px;
+    padding:5px;
+    padding-left:20px;
+  }
+  .input-pessoa-endereco {
+    border: 1px solid #000;
+    width:830px;
+    height:55px;
+    background-image:linear-gradient(30deg,#cccc, #fff);
+    margin-top:20px;
+    border-radius:5px;
+    font-size:18px;
+    padding: 5px;
+    padding-left:20px;
+  }
+  .comeco-formulario {
+    display:flex;
+    flex-direction: column;
+  }
+  .meio-formulario {
+    display: flex;
+    flex-direction:column;
+  }
+  #campo-descricao-detalhada {
+    resize:none;
+    margin-top:50px;
+    background-image:linear-gradient(30deg,#cccc, #fff);
+   }
+   #botao-formulario-fale-conosco {
+    width:400px;
+    height:50px;
+    font-size:16px;
+    margin-top:40px;
+    background-color:var(--primary-color);
+    color: #fff;
+    border: 1px solid #000;
+    border-radius:5px;
+   }
+
+   @media screen and (max-width: 1080px) {
+    .input-pessoa {
+      border: 1px solid #000;
+      width:300px;
+      height:45px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    .input-pessoa-endereco {
+      border: 1px solid #000;
+      width:640px;
+      height:45px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    #campo-descricao-detalhada {
+      resize:none;
+      margin-top:50px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      width:650px;
+     }
+     .input-select-opcao {
+        border: 1px solid #000;
+        width:310px;
+        height:60px;
+        background-image:linear-gradient(30deg,#cccc, #fff);
+        margin-top:20px;
+        border-radius:5px;
+        font-size:18px;
+        padding:5px;
+      }
+   }
+
+
+   @media screen and (max-width: 720px) {
+
+    .input-pessoa {
+      border: 1px solid #000;
+      width:250px;
+      height:40px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    .input-pessoa-endereco {
+      border: 1px solid #000;
+      width:540px;
+      height:45px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    #campo-descricao-detalhada {
+      resize:none;
+      margin-top:50px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      width:540px;
+    }
+    #botao-formulario-fale-conosco {
+      width:320px;
+     
+      font-size:16px;
+      margin-top:40px;
+      background-color:var(--primary-color);
+      color: #fff;
+      border: 1px solid #000;
+      border-radius:5px;
+     }
+     .titulo-formulario {
+      font-weight: bold;
+      font-size:25px;
+      color:#000;
+    }
+    #subtitulo-formulario{
+      /*background-color: aqua;*/
+      color:#000;
+      font-size:13px;
+      margin-top:15px;
+    } 
+    .input-select-opcao {
+        border: 1px solid #000;
+        width:260px;
+        height:45px;
+        background-image:linear-gradient(30deg,#cccc, #fff);
+        margin-top:20px;
+        border-radius:5px;
+        font-size:18px;
+        padding:5px;
+      }
+   }
+
+  @media screen and (max-width:620px) {
+
+    .input-pessoa {
+      border: 1px solid #000;
+      width:250px;
+      height:40px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    .input-pessoa-endereco {
+      border: 1px solid #000;
+      width:540px;
+      height:45px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    #campo-descricao-detalhada {
+      resize:none;
+      margin-top:50px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      width:540px;
+    }
+    #botao-formulario-fale-conosco {
+      width:320px;
+      height:50px;
+      font-size:16px;
+      margin-top:40px;
+      background-color:var(--primary-color);
+      color: #fff;
+      border: 1px solid #000;
+      border-radius:5px;
+     }
+     .titulo-formulario {
+      font-weight: bold;
+      font-size:25px;
+      color:#000;
+    }
+    #subtitulo-formulario{
+      /*background-color: aqua;*/
+      color:#000;
+      font-size:13px;
+      margin-top:15px;
+    } 
+    .input-select-opcao {
+        border: 1px solid #000;
+        width:170px;
+        height:45px;
+        background-image:linear-gradient(30deg,#cccc, #fff);
+        margin-top:20px;
+        border-radius:5px;
+        font-size:18px;
+        padding:5px;
+    }
+
+
+  }
+
+  @media screen and (max-width:600px) {
+
+    .input-pessoa {
+      border: 1px solid #000;
+      width:220px;
+      height:30px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    .container-input {
+      gap: 15px;
+    }
+    .input-pessoa-endereco {
+      border: 1px solid #000;
+      width:445px;
+      height:35px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    #campo-descricao-detalhada {
+      resize:none;
+      margin-top:50px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      width:450px;
+    }
+    #botao-formulario-fale-conosco {
+      width:320px;
+      height:50px;
+      font-size:16px;
+      margin-top:40px;
+      background-color:var(--primary-color);
+      color: #fff;
+      border: 1px solid #000;
+      border-radius:5px;
+     }
+     .titulo-formulario {
+      font-weight: bold;
+      font-size:20px;
+      color:#000;
+    }
+    #subtitulo-formulario{
+      /*background-color: aqua;*/
+      color:#000;
+      font-size:10px;
+      margin-top:15px;
+    } 
+    .input-select-opcao {
+        border: 1px solid #000;
+        width:210px;
+        height:45px;
+        background-image:linear-gradient(30deg,#cccc, #fff);
+        margin-top:20px;
+        border-radius:5px;
+        font-size:18px;
+        padding:5px;
+    }
+
+  }
+
+  @media screen and (max-width:500px) {
+
+    .input-pessoa {
+      border: 1px solid #000;
+      width:200px;
+      height:30px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    .input-pessoa-endereco {
+      border: 1px solid #000;
+      width:365px;
+      height:35px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    #campo-descricao-detalhada {
+      resize:none;
+      margin-top:50px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      width:380px;
+    }
+    #botao-formulario-fale-conosco {
+      width:250px;
+      height:50px;
+      font-size:16px;
+      margin-top:40px;
+      background-color:var(--primary-color);
+      color: #fff;
+      border: 1px solid #000;
+      border-radius:5px;
+     }
+     .titulo-formulario {
+      font-weight: bold;
+      font-size:17px;
+      color:#000;
+    }
+    #subtitulo-formulario{
+      /*background-color: aqua;*/
+      color:#000;
+      font-size:13px;
+      margin-top:15px;
+    } 
+    .input-select-opcao {
+        border: 1px solid #000;
+        width:170px;
+        height:45px;
+        background-image:linear-gradient(30deg,#cccc, #fff);
+        margin-top:20px;
+        border-radius:5px;
+        font-size:18px;
+        padding:5px;
+    }
+
+  }
+  @media screen and (max-width:460px) {
+
+    .input-pessoa {
+      border: 1px solid #000;
+      width:150px;
+      height:30px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    .input-pessoa-endereco {
+      border: 1px solid #000;
+      width:345px;
+      height:35px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      margin-top:20px;
+      border-radius:5px;
+      font-size:18px;
+      padding:5px;
+    }
+    #campo-descricao-detalhada {
+      resize:none;
+      margin-top:50px;
+      background-image:linear-gradient(30deg,#cccc, #fff);
+      width:355px;
+    }
+    #botao-formulario-fale-conosco {
+      width:240px;
+      height:40px;
+      font-size:16px;
+      margin-top:40px;
+      background-color:var(--primary-color);
+      color: #fff;
+      border: 1px solid #000;
+      border-radius:5px;
+     }
+     .titulo-formulario {
+      font-weight: bold;
+      font-size:17px;
+      color:#000;
+    }
+    #subtitulo-formulario{
+      /*background-color: aqua;*/
+      color:#000;
+      font-size:13px;
+      margin-top:15px;
+    } 
+    .input-select-opcao {
+        border: 1px solid #000;
+        width:165px;
+        height:45px;
+        background-image:linear-gradient(30deg,#cccc, #fff);
+        margin-top:20px;
+        border-radius:5px;
+        font-size:18px;
+        padding:5px;
+    }
+
+
+  }
